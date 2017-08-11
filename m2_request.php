@@ -1,4 +1,5 @@
 <?php
+/*
 header('Access-Control-Allow-Origin: https://mmmmmj.github.io/');
 header('Access-Control-Allow-Methods: POST');
 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
@@ -34,4 +35,6 @@ for($i=0; $i<sizeof($list); $i++) {
 } 
 
 echo $data;
+*/
+var_dump("test");exit;
 ?>
