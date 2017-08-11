@@ -69,7 +69,7 @@
 	{
 		var infoData = $('#memo').val(); 
 		
-		$.ajax({ type: "POST", //POST로 넘길 것 
+		$.ajax({ type: "get", //POST로 넘길 것 
 		url: "guest/list.txt", //이동할 페이지 명시 
 		data: infoData, //infoData를 보냄 
 		success: function(result) { 
