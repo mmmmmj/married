@@ -44,40 +44,6 @@ $(function()
 
 				return false;
 			});
-		}, 200);
-
-		$.ajax
-		({
-			type		: 'POST',
-			url			: './m2_request.php',
-			dataType	: 'html',
-			success		: function (data)
-			{
-				$('ul#add').append(data);
-
-			}
-		});
-
-		function ajax_ok()
-		{
-			var params="memo="+$('#memo').val();  
-
-			$.ajax
-			({
-				type		: 'POST',
-				url			: './m2_request.php',
-				data		: params,
-				dataType	: 'html',
-				success		: function (data)
-				{
-					$('ul#add').html('');
-					$('ul#add').append(data);
-
-				}
-			});
-
-			return false;
-		}
-
+		}, 400);
 	});
 });
