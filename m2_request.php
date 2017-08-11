@@ -2,7 +2,7 @@
 //파일 만들기
 $log_dir = $_SERVER['DOCUMENT_ROOT'].'data/test';  
 
-if($_POST)
+if($_GET)
 {
    if(!is_file($log_dir))
    {
