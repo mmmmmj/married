@@ -1,0 +1,92 @@
+@charset "utf-8";
+@import url("font-awesome-4.6.2/css/font-awesome.min.css");
+
+@font-face 
+{
+  font-family:'Nanum Myeongjo';
+  font-weight:400;
+  src: url('font/NanumMyeongjo-Regular.eot');
+  src: url('font/NanumMyeongjo-Regular.eot?#iefix') format('embedded-opentype'),
+       url('font/NanumMyeongjo-Regular.woff2') format('woff2'),
+       url('font/NanumMyeongjo-Regular.woff') format('woff'),
+       url('font/NanumMyeongjo-Regular.ttf') format('truetype');
+}
+
+@font-face 
+{
+  font-family:'Nanum Myeongjo';
+  font-weight:bold;
+  src: url('font/NanumMyeongjo-Bold.eot');
+  src: url('font/NanumMyeongjo-Bold.eot?#iefix') format('embedded-opentype'),
+       url('font/NanumMyeongjo-Bold.woff2') format('woff2'),
+       url('font/NanumMyeongjo-Bold.woff') format('woff'),
+       url('font/NanumMyeongjo-Bold.ttf') format('truetype');
+}
+
+* {box-sizing:border-box; word-break:keep-all;}
+html {overflow:hidden; width:100%; height:100%; margin:0; padding:0; font-family:'Nanum Myeongjo', 'batang', '맑은 고딕', 'Malgun Gothic', '돋움', 'Dotum', '굴림', 'Gulim', AppleGothic, UnDotum, Arial, Tahoma, Verdana, sans-serif;}
+body {overflow:hidden; width:100%; height:100%; margin:0; padding:0; font-size:16px; color:#333; line-height:2;}
+ul, ol, li {margin:0; padding:0; list-style:none;}
+dl, dt, dd, p, 
+h1, h2, h3, h4, h5, h6 {margin:0; padding:0;}
+em {font-style:normal;}
+img {max-width:100%; border:0 none;}
+a {color:#555; text-decoration:none;}
+table {width:100%; border-collapse:collapse; border:0 none;}
+form {display:inline; margin:0; padding:0;}
+fieldset, 
+iframe {margin:0; padding:0; border:0 none;}
+textarea {width:100%; border:1px solid #ddd;}
+input, select, textarea,
+button {margin:0; padding:0; font-family:'Nanum Myeongjo', 'batang', '맑은 고딕', 'Malgun Gothic', '돋움', 'Dotum', '굴림', 'Gulim', AppleGothic, UnDotum, Arial, Tahoma, Verdana, sans-serif; font-size:16px; color:#555;}
+button {border:0 none; background:none;}
+input[type='text'],
+input[type='password'],
+input[type='number'] {width:200px; height:30px; padding:0; border:1px solid #ddd;}
+hr, legend, caption,
+.hidden {overflow:hidden; width:100%; height:0; margin:0; padding:0; font-size:0; line-height:0;}
+
+#menu {position:fixed; left:0; top:0; z-index:2; width:50px; height:100px;}
+#menu ul {height:100%;}
+#menu li {height:50%; background-color:#000;}
+#menu li + li {margin-top:1px;}
+#menu a {display:block; position:relative; height:100%; font-size:18px; text-align:center; color:#fff; line-height:2.8;}
+#menu .close a i {display:none;}
+#menu .close a:before {position:absolute; left:50%; top:50%; width:3px; height:26%; margin:-13% 0 0 -1.5px; background-color:#fff; content:''; transform:rotate(45deg);}
+#menu .close a:after {position:absolute; left:50%; top:50%; width:26%; height:3px; margin:-1.5px 0 0 -13%; background-color:#fff; content:''; transform:rotate(45deg);}
+
+#main {display:table; position:relative; z-index:0; width:100%; height:100%; background:url('../img/bg.png');}
+#main .desc {display:table-cell; position:relative; z-index:1; width:100%; height:100%; padding-bottom:30%; font-size:.8em; text-align:center; vertical-align:middle;}
+#main .desc strong {display:block; margin:0 0 20px; font-size:2.5em; letter-spacing:10px;}
+#main .desc p {opacity:.7;}
+#main .img {position:absolute; left:0; top:0; z-index:0; width:100%; height:100%;}
+#main .img > * {position:absolute; left:50%; bottom:0; max-width:9999%; height:100%; opacity:.9;}
+#main.web .img > * {left:0; max-width:100%; height:auto; margin:0 !important;}
+
+#location.on {left:0;}
+#location {position:absolute; left:100%; top:0; width:100%; height:100%; padding-left:51px; transition:all .5s;}
+#location iframe {width:100%; height:100%;}
+#location .contents {position:absolute; left:51px; bottom:0; right:0; padding:20px; background-color:#fff;}
+
+#guest {position:absolute; left:0; top:0; width:100%; height:100%; padding-left:55px; background-color:#000;}
+
+@media screen and (max-width:768px)
+{
+	#main .desc {padding:0 0 55% 25%; text-align:left;}
+	#main .desc strong span {display:block;}
+	#main .desc p span {display:block; overflow:hidden; height:0; font-size:0; line-height:0;}
+}
+
+@media screen and (max-width:550px)
+{
+	body {font-size:12px;}
+
+	#main .desc {padding:0 0 65% 20%;}
+}
+
+@media screen and (max-width:370px)
+{
+	#main .desc {padding-right:15%; text-align:right;}
+	#main .desc strong {margin-right:-15px; font-size:2.2em;}
+	#main .desc em {display:none;}
+}
