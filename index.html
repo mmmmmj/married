@@ -65,10 +65,10 @@
 
 
 	<script type="text/javascript">
-	var infoData = $('#memo').val(); 
-
 	$('button').click(function()
 	{
+		var infoData = $('#memo').val(); 
+
 		$.ajax({ type: "get", //POST로 넘길 것 
 		url: "guest/list.txt", //이동할 페이지 명시 
 		data: infoData, //infoData를 보냄 
@@ -79,11 +79,16 @@
 	});
 
 	$.ajax({
-		 type: "get",
-		 url: 'guest/list.txt',
-            cache: true,
-            data: infoData
-		});
+	type		: 'get',
+	url			: 'guest/list.txt',
+	dataType	: 'txt',
+	success		: function (data)
+	{
+		$('ul#add').append(data);
+
+	}
+});
+
 
 	</script>
 
