@@ -1,8 +1,11 @@
 <?php
+header('Access-Control-Allow-Origin: https://mmmmmj.github.io/');
+header('Access-Control-Allow-Methods: POST');
+
 //파일 만들기
 $log_dir = $_SERVER['DOCUMENT_ROOT'].'data/test';  
 
-if($_GET)
+if($_POST)
 {
    if(!is_file($log_dir))
    {
