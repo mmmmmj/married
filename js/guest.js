@@ -1,4 +1,4 @@
 $(function()
 {
-	$('.text1').find('tr:last-child').remove();
+	$('.text1 > tbody').find('> tr:last-child').remove();
 });
