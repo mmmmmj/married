@@ -23,6 +23,3 @@
 }
 
 * {font-family:'Nanum Myeongjo';}
-
-.text1 tbody tr:nth-last-child(1),
-.text1 tbody tr:nth-last-child(2) {display:none;}
