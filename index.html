@@ -53,44 +53,7 @@
 <div class="group" id="guest">
 	<h1 class="hidden">축하의 글</h1>
 
-	<div class="write">
-      <h2 class="hidden">111</h2>
-      <textarea name="" id="memo" cols="30" rows="10"></textarea>
-      <button>확인</button>
-	  <div>
-		<ul id="add">
-		</ul>
-	  </div>
-	</div>
-
-
-	<script type="text/javascript">
-	$('button').click(function()
-	{
-		var infoData = $('#memo').val(); 
-
-		$.ajax({ type: "get", //POST로 넘길 것 
-		url: "guest/list.txt", //이동할 페이지 명시 
-		data: infoData, //infoData를 보냄 
-		success: function(result) { 
-		alert(infoData); //성공시 result 값을 alert 으로 띄움 
-		} 
-		});
-	});
-
-	$.ajax({
-	type		: 'get',
-	url			: 'guest/list.txt',
-	dataType	: 'txt',
-	success		: function (data)
-	{
-		$('ul#add').append(data);
-
-	}
-});
-
-
-	</script>
+	<iframe src="https://goo.gl/4m9EeG"></iframe>
 
 </div>
 </body>
