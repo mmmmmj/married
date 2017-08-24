@@ -22,4 +22,6 @@
        url('font/NanumMyeongjo-Bold.ttf') format('truetype');
 }
 
-* {font-family:'Nanum Myeongjo';}
+* {font-family:'Nanum Myeongjo'; color:#fff;}
+
+body {background-color:#000;}
