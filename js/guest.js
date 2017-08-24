@@ -1,7 +1,4 @@
 $(function()
 {
-	$(document).ready(function()
-	{
-		alert('dd');
-	});
+	$('.text1').find('tr:last-child').remove();
 });
