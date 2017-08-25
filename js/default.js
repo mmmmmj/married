@@ -26,6 +26,7 @@ $(function()
 					{
 						$('#menu').find('li').removeClass('close');
 						$('section').removeClass('on');
+
 					}
 					else
 					{
