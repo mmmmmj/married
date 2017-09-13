@@ -10,11 +10,33 @@ td.black_small[width='61%'],
 style + table > tbody > tr > td > table:first-child + table,
 img[src='template/Normal/img/defaultnew.gif'] {display:none;}
 
-input[name='uid'] + tr > td > table > tbody {display:block; width:100%;}
-input[name='uid'] + tr > td > table > tbody > tr {display:none; float:left; width:20%; padding:20px; border:1px solid #666;}
-input[name='uid'] + tr > td > table > tbody > tr[bgcolor='#ffffff'] {display:block; position:relative;}
-input[name='uid'] + tr > td > table > tbody > tr td {display:inline;}
+td.black_small[width='61%'] + td[align='right'] img {display:none;}
+td.black_small[width='61%'] + td[align='right'] a:before {color:#666; content:'*';}
 
+input[name='uid'] + tr > td > table > tbody {display:block; width:100%;}
+input[name='uid'] + tr > td > table > tbody > tr {display:none; float:left; width:20%; padding:20px 20px 10px; border:1px solid #555;}
+input[name='uid'] + tr > td > table > tbody > tr[bgcolor='#ffffff'] {display:block; position:relative;}
+input[name='uid'] + tr > td > table > tbody > tr td {display:block; width:100% !important; text-align:left !important;}
+input[name='uid'] + tr > td > table > tbody > tr td.black_small {overflow:hidden; height:0;}
+input[name='uid'] + tr > td > table > tbody > tr td.black_small a {overflow:hidden; position:absolute; right:0; bottom:0; width:30px; height:30px; font-size:0; line-height:0;}
+input[name='uid'] + tr > td > table > tbody > tr td.black_small a:before {position:absolute; right:-40px; bottom:-40px; width:40px; height:40px; background-color:#666; content:''; transform:rotate(45deg); transition:all .5s;}
+input[name='uid'] + tr > td > table > tbody > tr td.black_small a:hover:before,
+input[name='uid'] + tr > td > table > tbody > tr td.black_small a:focus:before,
+input[name='uid'] + tr > td > table > tbody > tr td.black_small a:active:before {right:-20px; bottom:-20px;}
+input[name='uid'] + tr > td > table > tbody > tr td[width='63%'] {font-size:.8em;}
+input[name='uid'] + tr > td > table > tbody > tr td[width='12%'] {margin-top:10px; color:#999; text-align:right !important;}
+
+#preview,
 #write + tbody td[width='106'],
 #write + tbody td[width='130'],
 #write + tbody td[width='24'] {display:none;}
+#write + tbody td[width='58'] {float:left; width:50%; padding:0 3px 5px 0; box-sizing:border-box;}
+#write + tbody td[width='70'] {float:left; width:50%; padding:0 0 5px 3px; box-sizing:border-box;}
+#write + tbody td[colspan='5'] {display:block; width:100%;}
+#write + tbody td[colspan='5'] img {position:absolute; right:0; bottom:0; width:90px; height:100%; opacity:0;}
+
+script + tr > td > table {width:100%; padding-top:30px; border-top:1px dashed #444;}
+
+#write + tbody > tr {display:block; position:relative; width:400px; max-width:100%; margin:0 auto; padding-right:85px;}
+#write + tbody > tr:before {position:absolute; right:0; bottom:0; width:80px; height:100%; background-color:#444; font-family:'Arita Dotum'; color:#fff; text-align:center; content:'확인'; line-height:80px;} 
+#write + tbody input {width:100%; padding:10px; box-sizing:border-box; border:0 none; background:none #222; color:#fff;}
