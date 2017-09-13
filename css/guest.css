@@ -1,9 +1,20 @@
 @charset "utf-8";
-
 @import url("font.css");
 
-* {font-family:'Noto Kr'; color:#fff;}
+* {font-family:'Noto Kr' !important; color:#fff;}
 
 body {background-color:#000;}
-table, td {background:none !important;}
-td.black_small[height='22'] {display:none;}
+table, tr, td {background:none !important; color:#fff;}
+td.black_small[height='22'],
+td.black_small[width='61%'],
+style + table > tbody > tr > td > table:first-child + table,
+img[src='template/Normal/img/defaultnew.gif'] {display:none;}
+
+input[name='uid'] + tr > td > table > tbody {display:block; width:100%;}
+input[name='uid'] + tr > td > table > tbody > tr {display:none; float:left; width:20%; padding:20px; border:1px solid #666;}
+input[name='uid'] + tr > td > table > tbody > tr[bgcolor='#ffffff'] {display:block; position:relative;}
+input[name='uid'] + tr > td > table > tbody > tr td {display:inline;}
+
+#write + tbody td[width='106'],
+#write + tbody td[width='130'],
+#write + tbody td[width='24'] {display:none;}
