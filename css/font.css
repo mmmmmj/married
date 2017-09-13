@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+@font-face 
+{
+  font-family:'Nanum Myeongjo';
+  src: url('font/nanum_myeongjo_r.eot');
+  src: url('font/nanum_myeongjo_r.eot?#iefix') format('embedded-opentype'),
+       url('font/nanum_myeongjo_r.woff2') format('woff2'),
+       url('font/nanum_myeongjo_r.woff') format('woff'),
+       url('font/nanum_myeongjo_r.ttf') format('truetype');
+}
+
+@font-face 
+{
+  font-family:'Nanum Myeongjo';
+  font-weight:bold;
+  src: url('font/nanum_myeongjo_b.eot');
+  src: url('font/nanum_myeongjo_b.eot?#iefix') format('embedded-opentype'),
+       url('font/nanum_myeongjo_b.woff2') format('woff2'),
+       url('font/nanum_myeongjo_b.woff') format('woff'),
+       url('font/nanum_myeongjo_b.ttf') format('truetype');
+}
+
+@font-face 
+{
+  font-family:'Arita Dotum';
+  src: url('font/arita_dotum_m.eot');
+  src: url('font/arita_dotum_m.eot?#iefix') format('embedded-opentype'),
+       url('font/arita_dotum_m.woff') format('woff'),
+       url('font/arita_dotum_m.ttf') format('truetype');
+}
+
+@font-face 
+{
+  font-family:'Arita Dotum';
+  font-weight:bold;
+  src: url('font/arita_dotum_b.eot');
+  src: url('font/arita_dotum_b.eot?#iefix') format('embedded-opentype'),
+       url('font/arita_dotum_b.woff') format('woff'),
+       url('font/arita_dotum_b.ttf') format('truetype');
+}
+
+@font-face 
+{
+  font-family:'Noto Kr';
+  src: url('font/noto_kr_l.eot');
+  src: url('font/noto_kr_l.eot?#iefix') format('embedded-opentype'),
+       url('font/noto_kr_l.woff') format('woff');
+}
+
+@font-face 
+{
+  font-family:'Gotham';
+  font-weight:bold;
+  src: url('font/gotham_b.eot');
+  src: url('font/gotham_b.eot?#iefix') format('embedded-opentype'),
+       url('font/gotham_b.woff') format('woff');
+}
