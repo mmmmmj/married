@@ -6,6 +6,4 @@
 
 body {background-color:#000;}
 table, td {background:none !important;}
-td > img,
-td b,
-td.text[align='left'] {display:none;}
+td.black_small[height='22'] {display:none;}
