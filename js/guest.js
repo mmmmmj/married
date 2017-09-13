@@ -4,4 +4,12 @@ $(function()
 
 	$('.text1 > tbody').find('> tr:eq('+ $('.text1 > tbody').find('> tr').length - 1 +')').remove();
 	$('.text1 > tbody').find('> tr:eq('+ $('.text1 > tbody').find('> tr').length - 2 +')').remove();
+
+	$('td').each(function(i)
+	{
+		if ($(this).text() == '')
+		{
+			$(this).remove();
+		}
+	}	
 });
