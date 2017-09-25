@@ -3,7 +3,8 @@
 
 * {font-family:'Noto Kr' !important; color:#fff;}
 
-body {background-color:#000;}
+html {display:table; width:100%; height:100%;}
+body {display:table-cell; padding-bottom:10%; background-color:#000; vertical-align:middle;}
 table, tr, td {background:none !important; color:#fff;}
 td.black_small[height='22'],
 td.black_small[width='61%'],
@@ -40,3 +41,9 @@ script + tr > td > table {width:100%; padding-top:30px; border-top:1px dashed #4
 #write + tbody > tr {display:block; position:relative; width:400px; max-width:100%; margin:0 auto; padding-right:85px;}
 #write + tbody > tr:before {position:absolute; right:0; bottom:0; width:80px; height:100%; background-color:#444; font-family:'Arita Dotum'; color:#fff; text-align:center; content:'확인'; line-height:80px;} 
 #write + tbody input {width:100%; padding:10px; box-sizing:border-box; border:0 none; background:none #222; color:#fff;}
+
+@media screen and (max-width:620px)
+{
+	#write + tbody td[width='58'],
+	#write + tbody td[width='70'] {float:left; width:100%;}
+}

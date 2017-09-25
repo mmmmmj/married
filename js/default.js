@@ -9,6 +9,7 @@ $(function()
 				if ($(window).width() >= ($(window).height() * 1.4))
 				{
 					$('#visual').addClass('web');
+					$('#visual').css('marginLeft',0);
 				}		
 				else
 				{
@@ -53,6 +54,6 @@ $(function()
 				return false;
 			});
 
-		}, 600);
+		}, 800);
 	});
 });
