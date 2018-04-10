@@ -3,18 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta property="og:description" content="2018년 5월 18일 낮 12시 광주 델리하우스" />
 
 <title>김순영 ♡ 조민지</title>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
-<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css" />
 <link rel="stylesheet" href="../css/font.css" />
 
 <style type="text/css">
 
-html {overflow:hidden; overflow-y:auto; margin:0; padding:0; font-size:11px; line-height:11px;}
-body {overflow:hidden; margin:0; padding:0; font-family:'Nanum Myeongjo'; font-size:1.4rem; color:#000; letter-spacing:-1px; line-height:200%;}
+html {overflow:hidden; overflow-y:auto; margin:0; padding:0; font-size:10px; line-height:10px;}
+body {overflow:hidden; margin:0; padding:0; font-family:'Nanum Myeongjo', 'batang'; font-size:1.4rem; color:#000; letter-spacing:-1px; line-height:200%;}
 h1 {margin:0; padding:0; font-size:1em; font-weight:400;}
 ul, li {margin:0; padding:0; list-style:none;}
 p {margin:0; padding:0;}
@@ -108,21 +109,13 @@ img {max-width:100%;}
 	</ul>
 
 	<script type="text/javascript">
-		var inx = 0;
-
-		setInterval(function()
-		{
-			inx +=1;
-
-			if (inx == 5)
-			{
-				inx = 0;
-			}
-			
-			$('.img').find('li').hide();
-			$('.img').find('li').eq(inx).fadeIn();
-
-		}, 4000);
+		$('.group2 .img').bxSlider
+		({
+			mode		: 'fade',
+			pager		: false,
+			controls	: false,
+			auto		: true
+		});
 	</script>
 
 	<ul class="list">
