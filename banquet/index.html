@@ -6,14 +6,17 @@
 
 <title>김순영 ♡ 조민지</title>
 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
 <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css" />
 <link rel="stylesheet" href="../css/font.css" />
 
 <style type="text/css">
 
-html {overflow:hidden; overflow-y:auto; margin:0; padding:0; font-size:10px; line-height:10px;}
-body {overflow:hidden; margin:0; padding:0; background-color:#c8c8a9; font-family:'Nanum Myeongjo'; font-size:1.4rem; color:rgba(0, 0, 0, .5); letter-spacing:-1px; line-height:200%;}
+html {overflow:hidden; overflow-y:auto; margin:0; padding:0; font-size:11px; line-height:11px;}
+body {overflow:hidden; margin:0; padding:0; font-family:'Nanum Myeongjo'; font-size:1.4rem; color:#000; letter-spacing:-1px; line-height:200%;}
 h1 {margin:0; padding:0; font-size:1em; font-weight:400;}
+ul, li {margin:0; padding:0; list-style:none;}
 p {margin:0; padding:0;}
 strong {font-weight:400;}
 img {max-width:100%;}
@@ -27,8 +30,8 @@ img {max-width:100%;}
 .group1 h1 {margin-bottom:20px; font-size:2rem; color:rgba(0, 0, 0, .8); text-align:center;}
 .group1 h1 span {padding:0 10px; color:transparent;}
 .group1 .img {overflow:hidden; position:relative; line-height:0;}
-.group1 .img:before {position:absolute; left:-60px; top:-120px; width:100px; height:300px; background-color:#c8c8a9; content:''; transform:rotate(55deg);}
-.group1 .img:after {position:absolute; right:-60px; bottom:-120px; width:100px; height:300px; background-color:#c8c8a9; content:''; transform:rotate(55deg);}
+.group1 .img:before {position:absolute; left:-60px; top:-120px; width:100px; height:300px; background-color:#fff; content:''; transform:rotate(55deg);}
+.group1 .img:after {position:absolute; right:-60px; bottom:-120px; width:100px; height:300px; background-color:#fff; content:''; transform:rotate(55deg);}
 .group1 .txt {margin-top:20px; font-size:1.6rem; text-align:center;}
 .group1 .txt strong {display:block; font-size:1.4rem; letter-spacing:0;}
 
@@ -36,11 +39,21 @@ img {max-width:100%;}
 .group2 .txt p {margin-bottom:10px;}
 .group2 .txt span {display:block; font-size:1.2rem; color:rgba(0, 0, 0, .2); text-align:right;}
 .group2 .img {margin:20px 0 0;}
+.group2 .img li {display:none;}
+.group2 .img li:first-child {display:block;}
+.group2 .list {position:relative; margin-top:20px; padding:15px 30px; box-sizing:border-box; line-height:40px;}
+.group2 .list li:before {position:absolute; left:-30px; top:-15px; width:20px; height:20px; border-top:8px solid #efefef; border-left:8px solid #efefef; content:'';}
+.group2 .list li:after {position:absolute; right:-30px; top:-15px; width:20px; height:20px; border-top:8px solid #efefef; border-right:8px solid #efefef; content:'';}
+.group2 .list li:nth-child(2):before,
+.group2 .list li:nth-child(2):after {top:auto; bottom:-15px; border-top:0 none; border-bottom:8px solid #efefef;}
+.group2 .list li {position:relative;}
+.group2 .list span {position:absolute; right:0; top:0; font-size:1.6rem;}
+.group2 .list strong {font-size:1.6rem;}
 
-.group3 .txt {margin-bottom:20px; padding:20px 10px; border:1px solid rgba(0, 0, 0, .1); background-color:rgba(0, 0, 0, .05); text-align:center;}
+.group3 .txt {margin-bottom:20px; padding:20px 10px; border:1px solid #ddd; background-color:#f8f8f8; text-align:center;}
 .group3 .txt span {font-size:1.6rem;}
 .group3 .txt p {font-size:1.2rem; color:rgba(0, 0, 0, .3); line-height:150%;}
-.group3 .txt strong {display:block; color:#fff; letter-spacing:0;}
+.group3 .txt strong {display:block; color:#e25d5c; letter-spacing:0;}
 .group3 .txt small {letter-spacing:0;}
 .group3 .map {display:block; overflow:hidden; position:relative;}
 .group3 .map:before {position:absolute; left:-5px; top:-160px; width:100px; height:300px; box-shadow:2px 5px 5px rgba(0, 0, 0, .5); background-color:#333; content:''; transform:rotate(35deg);}
@@ -86,7 +99,36 @@ img {max-width:100%;}
 		<span>사랑하는 별 하나 - 이성선</span>
 	</div>
 
-	<p class="img"><img src="img/img2.jpg" alt="" /></p>
+	<ul class="img">
+		<li><img src="img/img2.jpg" alt="" /></li>
+		<li><img src="img/img3.jpg" alt="" /></li>
+		<li><img src="img/img4.jpg" alt="" /></li>
+		<li><img src="img/img5.jpg" alt="" /></li>
+		<li><img src="img/img6.jpg" alt="" /></li>
+	</ul>
+
+	<script type="text/javascript">
+		var inx = 0;
+
+		setInterval(function()
+		{
+			inx +=1;
+
+			if (inx == 5)
+			{
+				inx = 0;
+			}
+			
+			$('.img').find('li').hide();
+			$('.img').find('li').eq(inx).fadeIn();
+
+		}, 4000);
+	</script>
+
+	<ul class="list">
+		<li><strong>김경형 &middot; 박주영</strong>의 차남 <span>김순영</span></li>
+		<li><strong>서진순</strong>의 장녀 <span>조민지</span></li>
+	</ul>
 </section>
 
 <section class="group group3">
